@@ -1,0 +1,924 @@
+/* ================================
+	DEFAULT STYLES
+    ================================ */ 
+body {
+	background-color:#ffffff;
+	color:#000000;
+	font-family: "Trebuchet MS",Verdana,Tahoma,arial;
+	font-size:8pt;
+	font-weight:normal;
+	margin-top:0px;
+	margin-left:0px;
+	margin-right:0px;
+	margin-bottom:1px;
+	scrollbar-face-color:#dddddd;
+	scrollbar-track-color:#eeeeee;
+	scrollbar-arrow-color:#333333;
+	scrollbar-shadow-color:#999999;
+	scrollbar-darkshadow-color:#ffffff;
+	scrollbar-highlight-color:#ffffff;
+	scrollbar-3dlight-color:#dddddd;
+	/*background-image: url(bck.jpg);
+	background-repeat: repeat-x;
+	background-position: top;*/
+}
+body a {
+	font-family: "Trebuchet MS",Verdana,Tahoma,arial;
+	color:#666666;text-decoration:none;
+	cursor: pointer;
+; cursor: hand;
+
+}
+body a:hover {
+	color:#cc0000;text-decoration:none;
+; cursor: hand
+}
+body a.link:hover {
+	color:#cc0000;cursor:hand;text-decoration:underline;
+}
+table {
+	font-size:8pt;font-weight:normal;
+}
+
+/* ================================
+	CONTAINER STYLES
+    ================================ */ 
+
+
+.cpHeader {
+	color:#ffffff;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	font-weight: normal;
+	clip:    rect(   );
+	background-image: url(header.html);
+	background-repeat: repeat-x;
+	background-position: left;
+}
+.cpBack {
+	/*background-image:url(../../common/tile_backgrey.gif);*/
+	background-color:#ffffff; color:#000000;
+; text-align: justify
+; font-size: 8pt
+}
+.cpBackEdge {
+	 color:#ffffff; 
+; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px
+}
+.cpBackAlt {
+	background-color:#ffffff; color:#000000; 
+}
+.cpBackAltEdge {
+	 color: White; 
+; background-repeat: repeat
+}
+.cpTabLayer {
+	 color:#ffffff; 
+
+
+; clip:   rect(   );
+	/*border-bottom: 1px solid Black;
+	border-top: 1px solid Black;*/
+}
+.cpTab {
+color:#ffffff; font-weight:normal;
+	padding: 2px 8px 2px 8px; cursor:hand;
+;  font-size: 10pt
+
+;
+
+}
+.cpTabSel {
+	background-color:#330000; color:#ffff33; font-weight:bold;
+	border:1px #000000 solid; padding: 2px 6px 2px 6px; cursor:hand;
+}
+.cpTabSubLayer {
+	background-color:#ffffff; color:#666666; 
+}
+.cpTabSub {
+	background-color:#ffffff; color:#666666; font-weight:medium; font-size:90%;
+	border:solid #ffffff 1px; padding: 2px 6px 2px 6px; cursor:hand;
+}
+.cpTabSubSel {
+	background-color:#ffffff; color:#666666; font-weight:bold; font-size:90%;
+	border:1px #ffffff solid; padding: 2px 4px 2px 4px; cursor:hand;
+}
+.cpTabLink {
+color: White;
+cursor:hand;
+text-decoration:none;
+
+font-size: 11px;
+padding-top: 0px; 
+padding-right: 0px; 
+padding-left: 0px; 
+padding-bottom: 0px;}
+
+.cpTabLink:hover {
+	color:#ffff66;cursor:hand;text-decoration:none;
+}
+.cpTabLinkSel {
+	color:#ffff33;cursor:hand;text-decoration:none;
+; font-size: 11px
+}
+.cpTabLinkSel:hover {
+	color:#ffff66;cursor:hand;text-decoration:none;
+;
+}
+.cpTabSubLink {
+	color:#666666;cursor:hand;text-decoration:none;
+; font-size: 10px;
+}
+.cpTabSubLink:hover {
+	color:#000000;cursor:hand;text-decoration:none;
+}
+.cpTabSubLinkSel {
+	color:#666666;cursor:hand;text-decoration:none;
+;  font-size: 10px;
+}
+.cpTabSubLinkSel:hover {
+	color:#666666;cursor:hand;text-decoration:none;
+}
+.holderTabs{
+
+}
+/* ================================
+	MODULE STYLES
+    ================================ */
+.cpPartFrame {
+	border: #94A294 1px solid;
+}
+.cpPartFrameAlt {
+	border: #ffffff 1px solid;
+}
+.cpPartTitle {
+	background-color:#666666;font-weight:bold;color: White;
+; font-size: 12px
+}
+.cpPartTitleAlt {
+	background-color:#ffffff;font-weight:bold;color:#000000;
+; font-size: 9pt
+}
+.cpPartBody {
+	background-color:#FFFBFF;
+;font-size: 8pt; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px
+; font-style: normal
+}
+.cpPartBodyAlt {
+	background-color:#dddddd;
+}
+.cpPartFieldTitle {
+	color:#666666;text-decoration:none;
+;  font-size: 8pt
+}    
+.cpPartFieldTitleAlt {
+	color:#999999;text-decoration:none;
+;  font-size: 8pt
+; font-weight: bold
+}    
+.cpPartTab {
+	background:#eeeeee;
+; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px
+;  font-size: 7pt
+}
+
+/* ================================
+	INPUT STYLES
+    ================================ */ 
+.cpInput,select {
+	color:#000; font-size:8pt; font-weight:normal;
+	border:1pt #666666 solid;
+; text-align: justify;
+; width: 99%; clip:  rect(   )
+}
+.cpInputDr {
+	color:#666666;font-size:8pt; font-weight:normal;
+	border:1pt #666666 solid;
+; text-align: justify
+; width: 99%; clip:  rect(   )
+}
+.cpButton {
+	color:#000000;font-size:8pt; font-weight:normal;
+	border:solid #666666 1px; text-decoration:none;
+}
+.cpInputAlt {
+	color:#666666;font-size:8pt; font-weight:normal;
+	border:solid #666666 1px; text-decoration:none;
+}
+.cpButtonAlt {
+	color:#666666;font-size:8pt; font-weight:normal;
+	border:solid #666666 0px; text-decoration:none;cursor:hand;
+}
+.cpInputNav {
+	color:#666666; font-size:8pt; font-weight:normal;
+	width:150px;height:auto; border:solid #666666 1px; text-decoration:none;
+}
+.cpInputEdit {
+	color:#333333;font-size:8pt; font-weight:normal;
+	width:100%;line-height:8pt;text-decoration:none;border:solid #cccccc 1px;
+}
+
+/* ================================
+	CONTENT STYLES
+    ================================ */
+.cpNorm {
+	color:#dddddd;  font-size:8pt;
+}
+.cpNormHigh {
+	color:#ff0000;  font-size:8pt;
+}
+.cpNormAlt {
+	color:#999999;  font-size:8pt;
+}
+.cpTitle {
+	color:#FFFFFF;  font-size:14pt; font-weight:bold;
+}
+.cpTableHeader {
+	background-color:#999999;color:#ffffff;
+	font-size:8pt;font-weight:bold;line-height:14pt;
+}
+.cpTableRow {
+	background-color:white;
+}
+.cpTableRowAlt {
+	background-color:#eeeeee;
+}
+.cpTableEdge {
+	background-color:#666666;
+; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px
+}
+.cpTableSpacer {
+	background-color:#eeeeee;
+}
+.cpErrorTitle {
+	color:#ff0000; font-size:10pt; font-weight:bold;line-height:14pt;
+}
+.cpErrorText {
+	color:#ff0000;  font-size:8pt; font-weight:normal;
+}
+.cpTextTitle {
+	color:#000000;  font-size:10pt; font-weight:bold;line-height:normal;
+}
+
+/* ================================
+	REPORT STYLES
+    ================================ */
+.rptNorm {
+	color:#000000;  font-size:8pt;
+}
+.rptNormHigh {
+	color:#ff0000;  font-size:8pt;
+}
+.rptNormAlt {
+	color:#999999;  font-size:8pt;
+}
+.rptContainer {
+	color:#000066; font-size:8pt; font-weight:normal;
+	border:solid #999999 1px;
+}
+.rptContainerAlt {
+	color:#000066; font-size:8pt; font-weight:normal;
+	border:solid #ffffff 0px;
+}
+.rptColumn {
+	color:#000066; font-size:8pt; font-weight:normal;
+}
+.rptColumnDetail {
+	color:#999999; font-size:90%; font-weight:normal;
+}
+.rptColumnButton {
+	color:#000066; font-size:85%; font-weight:normal;
+}
+.rptEditColumn {
+	background-color:lightyellow; color:#000000; font-size:8pt; font-weight:normal;
+	border:solid #eeeeee 1px;
+; width: 100%
+}
+.rptLine {
+	background-color:#999999;
+}
+/*
+.rptInput {
+	color:#000066; font-size:8pt; font-weight:normal;
+	border:solid #999999 1px; text-decoration:none;
+; width: 95%
+}
+*/
+.rptOption {
+	color:#000066; font-size:8pt; font-weight:normal;
+	text-decoration:none;
+}
+.rptButton {
+	color:#000066; font-size:8pt; font-weight:normal;
+	border:solid #999999 1px; text-decoration:none;
+}
+.rptVwTitle {
+	color:#000033; font-size:14pt; font-weight:bold;
+}
+.rptVwHeader {
+
+	color:#000000;
+	font-size:8pt; font-weight:bold;
+
+}
+.rptVwFooter {
+	background-color:#333333; color:#ffffff; font-size:8pt; font-weight:normal;
+}
+.rptVwRow {
+	background-color:#ffffff; color:#000000; font-size:8pt; font-weight:normal;
+}
+.rptVwRowAlt {
+	background-color:#eeeeee; color:#000000; font-size:8pt; font-weight:normal;
+}
+.rptVwPaging {
+	background-color:#ffffff; color:#000000; font-size:8pt; font-weight:normal;
+}
+span {   font-size: 10pt; font-style: normal}
+.cpLogText {   font-size: 8pt; color: #000000; text-align: justify; border-top-width: thin; border-right-width: thin; border-bottom-width: thin; border-left-width: thin}
+.cpTextField {   font-size: 10pt; border-style: outset}
+.cpTextAlignBody {   font-size: 10pt; text-align: justify; margin-top: 10pt; margin-right: 10pt; margin-left: 10pt; letter-spacing: normal; word-spacing: normal; vertical-align: top}
+.cpBodyText {   font-size: 8pt}
+.cpHeaderWelcome { color: White; ; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px ;  font-weight: bold; clip: rect( ); background-repeat: no-repeat ; font-size: 9pt}
+.cpHeaderDate { color: White; ; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px ;  font-weight: normal; clip: rect( ); background-repeat: no-repeat ; font-size: 9pt}
+.cpBodyAlert { color:#666666; ; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px ;  font-weight: normal; clip: rect( ); background-repeat: no-repeat ; font-size: 14pt}
+.cpBodyAlertLink { color:#666666;cursor:hand ; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px ;  font-weight: normal; clip: rect( ); background-repeat: no-repeat ; font-size: 14pt}
+.cpBodyAlertLink:hover { color:#999933;cursor:hand ; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px ;  font-weight: normal; clip: rect( ); background-repeat: no-repeat ; font-size: 14pt}
+
+.cpBodyLink { color:#CCCCCC; ; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px ;  font-weight: bold; clip: rect( ); background-repeat: no-repeat ; font-size: 11px}
+
+.cpErrorAlert { color:#ff0000; ; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px ;  font-weight: normal; clip: rect( ); background-repeat: no-repeat ; font-size: 14pt}
+
+.cpMainHeading { color: Black; ; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px ;  font-weight: bold; clip: rect( ); background-repeat: no-repeat ; font-size: 11pt}
+.cpSubHeading { color: Black; ; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px ;  font-weight: normal; clip: rect( ); background-repeat: no-repeat ; font-size: 10pt}
+.cpSignoff {   font-size: 12pt; font-style: italic; font-weight: bold; color: #FFFFFF}
+.cpSignoff:hover {  font-size: 12pt; font-style: italic; font-weight: bold; color: #000000}
+.cpInputEditForm { color:#333333; font-size:8pt; font-weight:normal; width:75%;line-height:8pt;text-decoration:none;border:1px #cccccc solid; ; text-align: right}
+.cpHelpTabLink { background-color:#eeeeee; color:#C1C1C1; font-weight:bold; border:1px #eeeeee solid; padding: 2px 8px 2px 8px; cursor:hand; ;  font-size: 8pt;
+/*background-image: url(header.jpg);
+	background-repeat: repeat-x;
+	background-position: top; */}
+.cpHelpTabLinkSel { background-color:#CCCCCC; color:#333333; font-weight:bold; border:1px #CCCCCC solid; padding: 2px 8px 2px 8px; cursor:hand; ;  font-size: 8pt;
+background-image: url(header.html);
+	background-repeat: repeat-x;
+	background-position: top; }
+.cpSecondaryTab { background-color:#CCCCCC; color:#333333; font-weight:bold; border:1px #CCCCCC solid; padding: 2px 8px 2px 8px; ;  font-size: 8pt; cursor: default; background-image: url(bgstrip.html);
+	background-repeat: repeat-x;
+	background-position: top; }
+.cpBodyLinkSel { color:#CCCCCC; ; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px ;  font-weight: bold; clip: rect( ); background-repeat: no-repeat ; font-size: 11px }
+.cpInputOpen { color:#000066; font-size:8pt; font-weight:normal; border:#666666 none; text-align: justify; width: 100%; ; clip: rect( ) }
+.cpTabBorder { font-weight:bold; border:3px #CCCCCC solid; padding: 2px 8px 2px 8px; ;  font-size: 8pt; cursor: default }
+.cpBodySmall {   font-size: 7pt; color: #333333}
+.cpTabBorderThin { font-weight:bold; border: 1px inset #462;  font-size: 8pt; cursor: default }
+.cpPartFieldTitleLight { color:#999999;text-decoration:none; ;  font-size: 8pt ; font-weight: normal}
+.cpTextAll { border: #ffffff 1px solid; ;  font-size: 8pt; color: #000000}
+.cpWhiteBorder { border:1pt #FFFFFF solid; padding: 2px 8px 2px 8px; ; cursor: default }
+.cpTextAllColor { border: #ffffff 1px solid; ;  font-size: 8pt; color: #666666}
+.cpInputNoBorder { color:#003399; font-size:8pt; font-weight:normal; border:none; text-align: right; width: 100%; ; clip: rect( ) }
+.cpInputEditNoBorder { color:#333333; font-size:8pt; font-weight:normal; width:100%;line-height:8pt;text-decoration:none;border:none; }
+
+.cpNavSel {  font-size: 8pt; font-weight: bold; color: #000000; border: #eeeeee; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; background-color: #CCCCCC;
+background-image: url(header.html);
+	background-repeat: repeat-x;
+	background-position: top;}
+.cpUnderline {
+	
+	font-size: 8pt;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCCCCC;
+}
+.cpUnderlineBig {
+
+	font-size: 12pt;
+	border-bottom-width: 3px;
+	border-bottom-style: solid;
+	border-bottom-color: #666666;
+	font-weight: bold;
+}
+.cpUnderlineGrey {
+	
+	font-size: 8pt;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #C2D0FE;
+	background-color: #eeeeee;
+}
+.cpSecondaryTabLite {
+background-color:#CCCCCC; color:#333333; font-weight:normal; border:1px #CCCCCC solid; padding: 2px 8px 2px 8px; ;  font-size: 8pt; cursor: default;
+background-image: url(header.html);
+	background-repeat: repeat-x;
+	background-position: top;
+}
+.cpULink {
+	color:#000000;cursor:hand;text-decoration:underline;
+ 
+}
+.cpULink:hover{
+	color:#003399;cursor:hand;text-decoration:underline;
+ 
+ }
+.cpTertiaryTab {
+background-color:#b7d1e7; color:#333333; font-weight:bold; border:1px solid #b7d1e7; padding: 2px 8px 2px 8px; ;  font-size: 8pt; cursor: default;
+background-image: url(bfade.html);
+	background-repeat: repeat-x;
+	border: 1px solid #E8DDC6;
+}
+.cpTertiaryTabLite {
+
+background-color:#b7d1e7; color:#333333; font-weight:normal; border:1px solid #b7d1e7; padding: 2px 8px 2px 8px; ;  font-size: 8pt; cursor: default;
+background-image: url(bfade.html);
+	background-repeat: repeat-x;
+	border: 1px solid #E8DDC6;
+}
+.TabHead {
+	
+	font-size: 8pt;
+	color: #000000;
+	background-image: url(header.html);
+	background-repeat: repeat-x;
+	background-position: top;
+}
+.gfade {
+	
+	font-size: 8pt;
+	background-image: url(gfade.html);
+	background-repeat: repeat-x;
+	border: 1px solid #CCCCCC;
+}
+.bfade {
+	
+	font-size: 8pt;
+	background-image: url(bfade.html);
+	background-repeat: repeat-x;
+	border: 1px solid #E8DDC6;
+}
+/* ================================
+	EKM STYLES
+    ================================ */ 
+
+
+P {
+	FONT-SIZE: 11px; COLOR: black; 
+}
+.nav {
+	
+	font-size: 8pt;
+	color: #666666;
+	background-image: url(../../common/graygradient.html);
+	background-repeat: repeat-x;
+	font-weight: normal;
+	border-top-color: #0066CC;
+	border-top-width: 1px;
+	border-top-style: solid;
+	
+}
+.subnav {
+
+	font-size: 8pt;
+	color: #666666;
+	border-bottom-width: 1px;
+	border-bottom-style: dashed;
+	border-bottom-color: #CDBECD;
+}
+.dottedbox {
+
+	font-size: 9pt;
+	color: #939393;
+	border: 1px dotted #CACACA;
+}
+.solidbox {
+
+	font-size: 8pt;
+	color: #808080;
+	border: 1px solid #C4C4C4;
+}
+.solidbluebox {
+
+
+	font-size: 8pt;
+	color: #666666;
+	border: 1px solid #B7CAD5;
+}
+.solidgreyhorizontal {
+
+	font-size: 8pt;
+	color: #3096DC;
+	border-top-width: 1px;
+	border-top-style: dashed;
+	border-top-color: #A0B7C7;
+	padding-left: 5px;
+	padding-right: 5px;
+	width: 96%;
+	margin-right: 5px;
+	margin-left: 5px;
+}
+.dottedgreyhorizontal {
+
+	font-size: 8pt;
+	border-top-width: 1px;
+	border-top-style: dashed;
+	border-top-color: #CACACA;
+}
+.underlinedbluetext {
+
+	font-size: 10pt;
+	color: #0066CC;
+	padding-left: 5px;
+	padding-right: 5px;
+	width: 96%;
+	text-decoration: underline;
+	font-weight: bold;
+}
+.underlinedredtext {
+
+	font-size: 12px;
+	color: #FF0000;
+	text-decoration: underline;
+}
+.redtext {
+
+
+	font-size: 12px;
+	color: #FF0000;
+	text-decoration: none;
+}
+.logo {
+
+	background-color: #066192;
+}
+.verticalline {
+
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #CDBECD;
+}
+.contentheader {
+
+	font-size: 9pt;
+	font-weight: bold;
+	color: #227AD3;
+}
+.cornerleft {
+	background-image: url(../../common/corner_left.html);
+	background-repeat: no-repeat;
+}
+.cornerright {
+	background-image: url(../../common/corner_right.html);
+	background-repeat: no-repeat;
+}
+.cornerleftbottom {
+	background-image: url(../../common/corner_left_bottom.html);
+	background-repeat: no-repeat;
+}
+.cornerrightbottom {
+	background-image: url(../../common/corner_right_bottom.html);
+	background-repeat: no-repeat;
+}
+.right {
+	background-image: url(../../common/right.html);
+	background-repeat: repeat-y;
+}
+.left {
+	background-image: url(../../common/left.html);
+	background-repeat: repeat-y;
+}
+
+.top {
+	background-image: url(../../common/top_new.html);
+}
+.bottom {
+	background-image: url(../../common/bottom.html);
+}
+.bg {
+	background-image: url(../../common/bg_page.html);
+	background-repeat: repeat;
+}
+.formbutton {
+	FONT-SIZE: 8pt;
+	COLOR: #FF3300;
+
+	font-weight: bold;
+	border: 1px solid #FBC6D5;
+	background-color: #FFFFFF;
+}
+.callnow {
+	FONT-SIZE: 9px;
+	COLOR: #FF6633;
+
+	font-weight: bold;
+}
+.bodytext{
+
+	font-size: 8pt;
+	color: #666666;
+	font-weight: normal;
+	
+}
+.underlinedblacktext {
+
+
+	font-size: 10pt;
+	color: #000000;
+	padding-left: 5px;
+	padding-right: 5px;
+	width: 96%;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+
+
+/* EXTENDED STYLES */
+
+fieldset{
+
+	background:#D0BFBF url('loginbg.html') repeat-x top;
+
+}
+
+.loginboxbg{
+border:1px solid #332222;
+
+
+}
+
+.cpButton{
+	
+
+	background: url('button.html') repeat-x top;
+	padding:1px 0px;
+	
+	border:1px outset #975;
+	
+}
+
+
+.cpButton:active{
+	border:1px inset #000;
+}
+
+
+.cpInput,select,input,textarea{
+font-family: "Trebuchet MS",Verdana,Tahoma,arial;
+border:1px solid #A3DC44; 
+padding:2px 0px 2px 2px;
+border-bottom:1px outset #A3DC44;
+border-right:1px outset #A3DC44;
+
+}
+
+.cpInput:hover,select:hover{
+}
+
+.cpPartFieldTitleAlt{
+
+color:#42620F ;
+
+}
+
+
+.cpErrorText{
+/*
+border:1px solid #009966;
+padding:4px;
+margin:4px;
+border-width:1px 0px;
+text-align:right;
+*/
+}
+.footer{
+	margin-top:75px;
+	border-bottom:1px solid navy;
+
+}
+
+.cpSubHeading{
+	font-size:12px;
+	font-weight:bold;
+
+}
+
+
+
+
+#tabs
+{
+
+	padding: 4px 15px 0px 15px;
+	margin: 0px 0px 0px 0px;
+	width: 644px;
+	width/* */:/**/614px;
+	width: /**/614px;
+	height: 18px;
+
+	clear: both;
+}
+
+.tab
+{
+	padding: 0px 3px 0px 3px;
+	background: url('bg_tab.html');
+}
+
+
+
+#tabs a
+{
+	color: #000;
+	text-decoration: none;
+	font-weight: normal;
+}
+
+#tabs a:visited
+{
+	color: #000;
+	text-decoration: none;
+	font-weight: normal;
+}
+
+#tabs a:hover
+{
+	color: #000;
+	text-decoration: underline;
+
+}
+
+#activetab {
+
+}
+
+#activetab a{
+
+font-weight:bold;
+}
+#activetab a:hover{
+
+}
+#Table2{
+	
+}
+
+#Table2 a{
+cursor:pointer;
+cursor:hand;
+color:#000;
+}
+
+
+
+#Table2 a:hover{
+color:#000;
+}
+
+
+.cpPartTitle td{
+	 background:#C4DFC4 url('blackbg.html') top repeat-x;	 
+	 border-bottom:1px solid #000;
+	 border-top:1px solid #fff;
+	 padding-left:4px;
+	 color:#000;
+
+}
+
+.tabtable{
+	 background:#fff url('tabbg-black.html') top repeat-x;	 
+	 border-bottom:1px solid #CAE2CA;
+	 border-top:1px solid #CAE2CA;
+}
+
+.tabtable td{
+
+}
+
+.cpTextField{
+border:1px solid #aaa;
+}
+
+.cpHeader {
+	background: url('header.html') no-repeat top left;
+}	
+.where{
+	 border-top:1px solid #877;
+
+}
+
+
+tr.cpPartTitle img{
+margin-top:2px;
+
+}
+tr.cpPartTitle img:hover{
+
+}
+
+.cpPartTitle img:active{
+
+}
+.cpPartTab{
+	background-color:#f9f9f9;
+
+}
+
+.cpPartTab td{
+	padding:0px 5px;
+	border-bottom:1px solid green;	
+}
+.cpPartTab a{
+	color:#00060A;
+	font-size:12px;
+	padding:3px;
+	cursor:pointer;
+	cursor:hand;
+	
+
+}
+
+a.cpSignOut{
+color:#fff;
+font-weight:normal;
+}
+
+.bfade{
+background:none;
+}
+
+.cpTabLink{
+
+}
+a,a:active,a:link{
+cursor:pointer;
+cursor:hand;
+}
+
+.curvedEnd{
+	width:14px;
+	background:url('e3.html') right top;
+}
+
+.tabsBegin{
+	width:8px;
+	background:url('e0.html') right top;
+
+}
+
+.tabsContinue{
+	width:8px;
+	background:url('e1.html') right top;
+
+}
+.tabEnd{
+	width:5px;
+	background:url('e2.html') right bottom;
+}
+
+/* ================================
+	ADDED STYLES
+    ================================ */ 
+
+*{font-family:Arial, Helvetica, sans-serif; font-size:12px;}
+a > img, a > div > img, a > span > img{border:none;}
+
+body{background-image:url(../../images/bgstrip.html); background-repeat:repeat-x; margin-top:0px;}
+#body{width:900px; height:150px; margin:auto; position:relative;}
+
+#header{width:100%; height:110px; position:relative;}
+
+#header > a{display:block; width:90px; height:27px; background-color:#5496CA; position:absolute; bottom:-40px; padding:10px;  padding-top:20px; left:20px;-moz-border-radius:10px; -khtml-border-radius:10px; -webkit-border-radius:10px; border-radius:10px; z-index:1000000;}
+#header > a:hover{background-image:url(../../images/xbck2.html); background-position:bottom; background-repeat:repeat-x;}
+
+
+#logo{position:absolute; top:10px; left:10px;}
+#logo2{position:absolute; top:10px; right:10px;}
+
+#xbody{height:400px; width:100%; position:relative;}
+
+#header > #timer{position:absolute; width:300px; height:70px; right:0px; color:#FFF; text-align:right; margin-top:40px;}
+
+
+#xbody2 > a{display:block; width:90px; height:27px; background-color:#407AA8; position:absolute; top:90px; padding:10px;  padding-top:20px; left:20px;-moz-border-radius:10px; -khtml-border-radius:10px; -webkit-border-radius:10px; border-radius:10px; z-index:1000000;}
+#xbody2 > a:hover{background-image:url(../../images/xbck2.html); background-position:bottom; background-repeat:repeat-x;}
+
+
+
+
+#menuitems{position:absolute; left:10px; width:500px; height:250px; top:100px;}
+#menuitems > div{margin-bottom:10px; height:40px;}
+#menuitems > div > span{display:block; float:left;}
+
+#txt{width:450px; margin-left:10px;}
+#board{position:absolute; left:500px;}
+
+#loginbox{position:absolute; right:-5px; top:50px;}
+#loginbox > #login{width:313px; height:207px; border:solid 1px #CCCCCC; background-color:#FFFFFF; position:relative;}
+#lock{position:absolute;top:30px; left:10px;}
+
+#regx{position:absolute; width:200px; top:35px; right:0px;}
+.ftitle{font-size:11px; font-weight:bold; margin-top:10px;}
+.submit{ width:81px; height:16px; color:#FFFFFF; background-color:#1F5816;  margin-top:10px; margin-left:0px; text-decoration:none;}
+
+
+#footer{height:100px; width:100%; background-image:url(../../images/stripx.html); background-repeat:no-repeat; background-position:top center; padding-top:20px; position:relative;}
+#footer > #privacy{font-weight:bold; font-size:10px;}
+#footer > #powered{position:absolute; top:10px; right:0px;}

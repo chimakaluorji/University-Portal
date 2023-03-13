@@ -1,0 +1,147 @@
+﻿<%@ Master Language="VB" CodeFile="StudentMasterPage.master.vb" Inherits="Students_StudentMasterPage" %>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Heritage Poly | Students</title>
+
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link href="css/logo.css" rel="stylesheet" />
+
+    <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+        var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = 'https://embed.tawk.to/589c6eedff923c0ab416ca3f/default';
+        s1.charset = 'UTF-8';
+        s1.setAttribute('crossorigin', '*');
+        s0.parentNode.insertBefore(s1, s0);
+    })();
+</script>
+<!--End of Tawk.to Script-->
+    
+</head>
+
+<body>
+    <form id="Form1" runat="server">
+    <div id="wrapper">
+        <nav class="navbar-default navbar-static-side" role="navigation">
+                <div class="sidebar-collapse">
+                    <ul class="nav metismenu" id="side-menu">
+                       
+                        <li class="nav-header">
+                            <div class="dropdown profile-element">
+                                <span>
+                                    <img class="img-circle" src="<%=PhotoUrl%>" alt="" width="80" height="80">
+                                    &nbsp;&nbsp;&nbsp;
+                                    <img src="img/logo.png" alt="">
+                                </span>
+                                <%-- <div id="logo1"></div>--%>
+                                <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                    <span class="clear"><span class="block m-t-xs">Welcome: <strong class="font-bold"><%=StudentUsername%></strong>
+                                    </span><span class="text-muted text-xs block"><%=RegNo%><b class="caret"></b></span></span></a>
+                                <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                                    <li><a href="ManageUser.aspx?ApNo=<%=Url%>">Profile</a></li>
+                                    <li><a href="StudentChat.aspx?ApNo=<%=Url%>">Chat</a></li>
+                                    <li class="divider"></li>
+                                    <li><asp:LinkButton ID="lBtLogout" runat="server">Logout</asp:LinkButton></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="logo-element">
+                                HP
+                            </div>
+                           
+                        </li>
+                        <li>
+                            <a href="ViewApplicationForm.aspx?ApNo=<%=Url%>"><i class="fa fa-th-large"></i><span class="nav-label">View Application Form</span></a>
+                        </li>
+                        <li>
+                            <a href="EditApplication.aspx?ApNo=<%=Url%>"><i class="fa fa-pencil"></i><span class="nav-label">Edit Application Form</span></a>
+                        </li>
+                       <li>
+                            <a href="UploadPicture.aspx?ApNo=<%=Url%>"><i class="fa fa-user"></i><span class="nav-label">Upload Passport</span></a>
+                        </li>
+                        <li>
+                            <a href="UploadDraft.aspx?ApNo=<%=Url%>"><i class="fa fa-money"></i><span class="nav-label">Upload Bank Teller</span>  </a>
+                        </li>
+                        <li>
+                            <a href="Notification.aspx?ApNo=<%=Url%>""><i class="fa fa-newspaper-o"></i><span class="nav-label">Notification</span></a>
+                        </li>
+                        
+                        
+                    </ul>
+
+                </div>
+            </nav>
+
+        <div id="page-wrapper" class="gray-bg">
+            <div class="row border-bottom">
+                    <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0; background-color: #283847;">
+                        <div class="navbar-header">
+                            <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i></a>
+
+                        </div>
+                         
+                        <ul class="nav navbar-top-links navbar-right">
+                            <li>
+                               
+                            <li>
+                                 
+                                <strong style="color: White; font-size: 25px;">HERITAGE POLYTECHNIC</strong>
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                            <li>
+                                <asp:LinkButton ID="BtnLogout" runat="server">
+                                    <i class="fa fa-sign-out"></i>
+                                    Log out&nbsp;&nbsp;&nbsp;
+                                    <i class="fa fa-tasks"></i></asp:LinkButton>
+                            </li>
+                        </ul>
+
+                    </nav>
+                </div>
+               
+             <div>
+                
+                    
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            
+            <div class="footer">
+                    <div class="pull-right">
+                        All rights reserved.
+                    </div>
+                    <div>
+                        <strong>HERITAGE POLYTECHNIC</strong> &copy; <%=Today.Year%>
+                         <%--<asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>--%>
+                    </div>
+                </div>
+
+        </div>
+
+         <div>
+                   
+                </div>
+    </div>
+
+</form>    
+</body>
+</html>
+
+
+
